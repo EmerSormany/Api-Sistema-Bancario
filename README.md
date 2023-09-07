@@ -7,7 +7,7 @@ Esta é a Sormy Banking System. Ela consiste em um sistema bancário com as func
 Usei a linguagem Javascript e o freamwork Express.js para Node.js para criar o servidor. Usei também a biblioteca Date-fns para manipulação das datas.
 
 Para baixar e utilizar você precisará ter em sua máquina o *Node.js* e algum programa como *Insomnia* para testar todas as requisições.
-Você poderá encontrá-los nos links a seguir: https://nodejs.org/en  e  https://insomnia.rest/download .
+Você poderá encontrá-los nos links a seguir: [Node.js](https://nodejs.org/en)  e  [Insomnia](https://insomnia.rest/download).
 
 Você precisará clonar este repositório utilizando o comando git clone git@github.com:EmerSormany/Api-Sistema-Bancario.git
 
@@ -22,38 +22,53 @@ Então o sistema estará funcionando e você poderá testar todos os endpoints.
 
 http://localhost:3000/contas?senha_banco=Cubos123Bank <br/>
 A rota precisa ser com verbo **GET** <br/>
-Irá listar todas as contas cadastradas no banco ou agência. Deve ser passado o valor *Cubos123Bank* na query *senha_banco* para que o usuário tenha acesso às contas.
+Irá listar todas as contas cadastradas no banco ou agência. Deve ser passado o valor *Cubos123Bank* na query *senha_banco* para que o usuário tenha acesso às contas. <br/>
+<img src="/imagens/lista_de_contas.png">
 
 http://localhost:3000/contas <br/>
 A rota precisa ser com verbo **POST**  <br/>
-Irá cadastrar uma conta no banco ou agência. Deve ser passadas como propriedades no body da requisição os dados da conta como uma **notação de objeto javascript(JSON)**: *nome, cpf, data_nascimento, telefone, email e senha*.
+Irá cadastrar uma conta no banco ou agência. <br/>
+Deve ser passadas como propriedades no body da requisição os dados da conta como uma **notação de objeto javascript(JSON)**: *nome, cpf, data_nascimento, telefone, email e senha*. 
+<img src="/imagens/requisicao_e_resposta_cadastrar conta.png">
 
 http://localhost:3000/contas/1/usuario <br/>
 A rota precisa ser com verbo **PUT**  <br/>
+Irá atualizar todos os dados da conta, excete número da conta e saldo. Deve ser passadas como propriedades no body da requisição os dados da conta como uma **notação de objeto javascript(JSON)**: *nome, cpf, data_nascimento, telefone, email e senha*. <br/>
 Precisa ser passado como **parâmetro na URL** o número da conta que deseja alterar os dados, entre ***contas/*** e ***/usuario*** <br/>
-Irá atualizar todos os dados da conta, excete número da conta e saldo. Deve ser passadas como propriedades no body da requisição os dados da conta como uma **notação de objeto javascript(JSON)**: *nome, cpf, data_nascimento, telefone, email e senha*.
+<img src="/imagens/requisicao_e_resposta_atualizar conta.png">
 
-http://localhost:3000/contas/2 <br/>
+http://localhost:3000/contas/1 <br/>
 A rota precisa ser com verbo **DELETE** <br/>
+Irá deletar uma conta. Possui validação de saldo para poder deletar a conta. <br/>
 Precisa ser passado como **parâmetro na URL** o número da conta que deseja excluir após ***contas/*** <br/>
-Irá deletar uma conta. Possui validação de saldo para poder deletar a conta.
+<img src="/imagens/excluir_conta.png">
 
 http://localhost:3000/transacoes/depositar <br/>
 A rota precisa ser com verbo **POST**  <br/>
-Precisa ser passadas como propriedades no body da requisição os dados para depósto como **notação de objeto javascript(JSON)**: *numero_conta* e *valor*.
+Irá realizar o depósito de algum valor. <br/>
+Precisa ser passadas como propriedades no body da requisição os dados para depósto como **notação de objeto javascript(JSON)**: *numero_conta* e *valor*. <br/>
+<img src="/imagens/deposito.png">
 
 http://localhost:3000/transacoes/sacar <br/>
 A rota precisa ser com verbo **POST**  <br/>
-Precisa ser passadas como propriedades no body da requisição os dados para saque como **notação de objeto javascript(JSON)**: *numero_conta*, *valor* e *senha*.
+Irá realizar o saque e algum valor. <br/>
+Precisa ser passadas como propriedades no body da requisição os dados para saque como **notação de objeto javascript(JSON)**: *numero_conta*, *valor* e *senha*. <br/>
+<img src="/imagens/saque.png">
 
 http://localhost:3000/transacoes/transferir <br/>
-A rota precisa ser com verbo **POST** <br/>
-Precisa ser passadas como propriedades no body da requisição os dados para saque como **notação de objeto javascript(JSON)**: *numero_conta*, *valor*, *senha* e *num_cont_destino*.
+A rota precisa ser com verbo **POST**. <br/>
+Irá transferir algum valor.<br/>
+Precisa ser passadas como propriedades no body da requisição os dados para saque como **notação de objeto javascript(JSON)**: *numero_conta*, *valor*, *senha* e *num_cont_destino*. <br/>
+<img src="/imagens/trasferencia.png">
 
 http://localhost:3000/contas/extrato?numero_conta=1&senha=12345 <br/>
-A rota precisa ser com verbo **GET** <br/>
-Deverá ser passados os valores de *numero_conta* e *senha* na query da requisição.
+A rota precisa ser com verbo **GET**. <br/>
+Irá mostrar o extrato da conta. <br/>
+Deverá ser passados os valores de *numero_conta* e *senha* na query da requisição. <br/>
+<img src="/imagens/extrato.png">
 
 http://localhost:3000/contas/saldo?numero_conta=1&senha=12345 <br/>
-A rota precisa ser com verbo **GET** <br/>
-Deverá ser passados os valores de *numero_conta* e *senha* na query da requisição.
+A rota precisa ser com verbo **GET**.  <br/>
+Irá mostrar o saldo da conta. <br/>
+Deverá ser passados os valores de *numero_conta* e *senha* na query da requisição. <br/>
+<img src="/imagens/saldo.png">
