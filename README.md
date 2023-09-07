@@ -1,19 +1,23 @@
+
+<img src="/imagens/lista_de_contas.png">
 # Api-Sistema-Bancario
 
 Hellow, there.
 
 Esta é a Sormy Banking System. Ela consiste em um sistema bancário com as funcionalidades de **listar todas as contas cadastradas, cadastrar conta, atualizar todos os dados de uma conta, excluir conta, depositar valor, sacar valor, transferir valor, obter extrato e saldo**.
 
-Usei a linguagem Javascript e o freamwork Express.js para Node.js para criar o servidor. Usei também a biblioteca Date-fns para manipulação das datas.
+### Tecnologias utilizadas no projeto:
+ *  Linguagem Javascript;
+ *  Express.js  > criar o servidor;
+ *  Node.js;
+ *  Biblioteca Date-fns > manipulação das datas.
 
-Para baixar e utilizar você precisará ter em sua máquina o *Node.js* e algum programa como *Insomnia* para testar todas as requisições.
-Você poderá encontrá-los nos links a seguir: [Node.js](https://nodejs.org/en)  e  [Insomnia](https://insomnia.rest/download).
-
-Você precisará clonar este repositório utilizando o comando git clone git@github.com:EmerSormany/Api-Sistema-Bancario.git
-
-Após baixados os arquivos você deverá abrir o terminal no diretório ***Api-Sistema-Bancario*** e digitar o comando *npm install* para instalar as bibliotecas utilizadas. 
-
-Após instaladas as bibliotecas e ainda no mesmo diretório você deverá digitar o comando *npm run dev* ou abrir o terminal na pasta ***SRC*** e digitar o comando *node index.js*
+### Como baixar e rodar o projeto:
+ * Para baixar e utilizar você precisará ter em sua máquina o *Node.js* e algum programa como *Insomnia* para testar todas as requisições.
+ * Você poderá encontrá-los nos links a seguir: [Node.js](https://nodejs.org/en)  e  [Insomnia](https://insomnia.rest/download).
+ * Você precisará clonar este repositório utilizando o comando: **git clone git@github.com:EmerSormany/Api-Sistema-Bancario.git**
+ * Após baixados os arquivos você deverá abrir o terminal no diretório ***Api-Sistema-Bancario*** e digitar o comando *npm install* para instalar as bibliotecas utilizadas. 
+ * Após instaladas as bibliotecas e ainda no mesmo diretório você deverá digitar o comando *npm run dev* no terminal ou abrir o terminal na pasta ***SRC*** e digitar o comando *node index.js*
 
 Então o sistema estará funcionando e você poderá testar todos os endpoints.
 
