@@ -16,7 +16,7 @@ Esta é a Stormy Banking System. Ela consiste em um sistema bancário com as fun
  1. Para baixar e utilizar, você precisará ter em sua máquina o Node.js e algum programa como o Insomnia para testar todas as requisições. Você poderá encontrá-los nos seguintes links: [Node.js](https://nodejs.org/en)  e  [Insomnia](https://insomnia.rest/download).
  2. Você precisará clonar este repositório utilizando o comando: **git clone git@github.com:EmerSormany/Api-Sistema-Bancario.git**.
  3. Após baixados os arquivos, você deverá abrir o terminal no diretório ***Api-Sistema-Bancario*** e digitar o comando *npm install* para instalar as bibliotecas utilizadas.
- 4. Após instaladas as bibliotecas e ainda no mesmo diretório, você deverá digitar o comando npm run dev no terminal ou abrir o terminal na pasta ***SRC*** e digitar o comando node *index.js*.
+ 4. Após instaladas as bibliotecas e ainda no mesmo diretório, você deverá digitar o comando *npm run dev* no terminal ou abrir o terminal na pasta ***SRC*** e digitar o comando *node index.js*.
 
 Então, o sistema estará funcionando e você poderá testar todos os endpoints.
 
@@ -24,14 +24,14 @@ Então, o sistema estará funcionando e você poderá testar todos os endpoints.
 # Os endpoints são: 
 #### 1. Listar Contas
  http://localhost:3000/contas?senha_banco=Cubos123Bank <br/>
-A rota precisa ser com verbo **GET** <br/>
+A rota precisa ser com verbo **GET**. <br/>
 Irá listar todas as contas cadastradas no banco ou agência. Deve ser passado o valor *Cubos123Bank* na query *senha_banco* para que o usuário tenha acesso às contas. <br/>
 
 <img src="/imagens/lista_de_contas.png">
 
 #### 2. Cadastrar Conta
 http://localhost:3000/contas <br/>
-A rota precisa ser com verbo **POST**  <br/>
+A rota precisa ser com verbo **POST**.  <br/>
 Irá cadastrar uma conta no banco ou agência. <br/>
 Deve ser passadas como propriedades no body da requisição os dados da conta como uma **notação de objeto javascript(JSON)**: *nome, cpf, data_nascimento, telefone, email e senha*. 
 
@@ -40,7 +40,7 @@ Deve ser passadas como propriedades no body da requisição os dados da conta co
 #### 3. Atualizar Conta
 
 http://localhost:3000/contas/1/usuario <br/>
-A rota precisa ser com verbo **PUT**  <br/>
+A rota precisa ser com verbo **PUT**.  <br/>
 Irá atualizar todos os dados da conta, excete número da conta e saldo. Deve ser passadas como propriedades no body da requisição os dados da conta como uma **notação de objeto javascript(JSON)**: *nome, cpf, data_nascimento, telefone, email e senha*. <br/>
 Precisa ser passado como **parâmetro na URL** o número da conta que deseja alterar os dados, entre ***contas/*** e ***/usuario*** <br/>
 
@@ -49,7 +49,7 @@ Precisa ser passado como **parâmetro na URL** o número da conta que deseja alt
 #### 4. Excluir Conta
 
 http://localhost:3000/contas/1 <br/>
-A rota precisa ser com verbo **DELETE** <br/>
+A rota precisa ser com verbo **DELETE**. <br/>
 Irá excluir uma conta. Possui validação de saldo para poder deletar a conta. <br/>
 Precisa ser passado como **parâmetro na URL** o número da conta que deseja excluir após ***contas/*** <br/>
 
@@ -58,7 +58,7 @@ Precisa ser passado como **parâmetro na URL** o número da conta que deseja exc
 #### 5. Realizar Depósito
 
 http://localhost:3000/transacoes/depositar <br/>
-A rota precisa ser com verbo **POST**  <br/>
+A rota precisa ser com verbo **POST**. <br/>
 Irá realizar o depósito de algum valor. <br/>
 Precisa ser passadas como propriedades no body da requisição os dados para depósto como **notação de objeto javascript(JSON)**: *numero_conta* e *valor*. <br/>
 
@@ -67,7 +67,7 @@ Precisa ser passadas como propriedades no body da requisição os dados para dep
 #### 6. Realizar Saque
 
 http://localhost:3000/transacoes/sacar <br/>
-A rota precisa ser com verbo **POST**  <br/>
+A rota precisa ser com verbo **POST**.  <br/>
 Irá realizar o saque e algum valor. <br/>
 Precisa ser passadas como propriedades no body da requisição os dados para saque como **notação de objeto javascript(JSON)**: *numero_conta*, *valor* e *senha*. <br/>
 
