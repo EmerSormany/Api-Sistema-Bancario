@@ -4,22 +4,21 @@
 
 Hello, there.
 
-Esta é a Sormy Banking System. Ela consiste em um sistema bancário com as funcionalidades de **listar todas as contas cadastradas, cadastrar conta, atualizar todos os dados de uma conta, excluir conta, depositar valor, sacar valor, transferir valor, obter extrato e saldo**.
+Esta é a Stormy Banking System. Ela consiste em um sistema bancário com as funcionalidades de **listar todas as contas cadastradas, cadastrar conta, atualizar todos os dados de uma conta, excluir conta, depositar valor, sacar valor, transferir valor, obter extrato e saldo**.
 
 ### Tecnologias utilizadas no projeto:
  *  Linguagem Javascript;
- *  Express.js  > criar o servidor;
+ *  Express.js para criar o servidor;
  *  Node.js;
- *  Biblioteca Date-fns > manipulação das datas.
+ *  Biblioteca Date-fns para manipulação das datas.
 
 ### Como baixar e rodar o projeto:
- * Para baixar e utilizar você precisará ter em sua máquina o *Node.js* e algum programa como *Insomnia* para testar todas as requisições.
- * Você poderá encontrá-los nos links a seguir: [Node.js](https://nodejs.org/en)  e  [Insomnia](https://insomnia.rest/download).
- * Você precisará clonar este repositório utilizando o comando: **git clone git@github.com:EmerSormany/Api-Sistema-Bancario.git**
- * Após baixados os arquivos você deverá abrir o terminal no diretório ***Api-Sistema-Bancario*** e digitar o comando *npm install* para instalar as bibliotecas utilizadas. 
- * Após instaladas as bibliotecas e ainda no mesmo diretório você deverá digitar o comando *npm run dev* no terminal ou abrir o terminal na pasta ***SRC*** e digitar o comando *node index.js*
+ 1. Para baixar e utilizar, você precisará ter em sua máquina o Node.js e algum programa como o Insomnia para testar todas as requisições. Você poderá encontrá-los nos seguintes links: [Node.js](https://nodejs.org/en)  e  [Insomnia](https://insomnia.rest/download).
+ 2. Você precisará clonar este repositório utilizando o comando: **git clone git@github.com:EmerSormany/Api-Sistema-Bancario.git**.
+ 3. Após baixados os arquivos, você deverá abrir o terminal no diretório ***Api-Sistema-Bancario*** e digitar o comando *npm install* para instalar as bibliotecas utilizadas.
+ 4. Após instaladas as bibliotecas e ainda no mesmo diretório, você deverá digitar o comando npm run dev no terminal ou abrir o terminal na pasta ***SRC*** e digitar o comando node *index.js*.
 
-Então o sistema estará funcionando e você poderá testar todos os endpoints.
+Então, o sistema estará funcionando e você poderá testar todos os endpoints.
 
 
 # Os endpoints são: 
@@ -74,7 +73,7 @@ Precisa ser passadas como propriedades no body da requisição os dados para saq
 
 <img src="/imagens/saque.png">
 
-#### 6. Realizar Transferência
+#### 7. Realizar Transferência
 
 http://localhost:3000/transacoes/transferir <br/>
 A rota precisa ser com verbo **POST**. <br/>
@@ -83,7 +82,7 @@ Precisa ser passadas como propriedades no body da requisição os dados para saq
 
 <img src="/imagens/trasferencia.png">
 
-#### 6. Obter Saldo De Uma Conta
+#### 8. Obter Saldo De Uma Conta
 http://localhost:3000/contas/extrato?numero_conta=1&senha=12345 <br/>
 A rota precisa ser com verbo **GET**. <br/>
 Irá mostrar o extrato da conta. <br/>
@@ -91,18 +90,19 @@ Deverá ser passados os valores de *numero_conta* e *senha* na query da requisi�
 
 <img src="/imagens/extrato.png">
 
-#### 6. Obter Extrato De Uma Conta
+#### 9. Obter Extrato De Uma Conta
 http://localhost:3000/contas/saldo?numero_conta=1&senha=12345 <br/>
 A rota precisa ser com verbo **GET**.  <br/>
 Irá mostrar o saldo da conta. <br/>
 Deverá ser passados os valores de *numero_conta* e *senha* na query da requisição. <br/>
+
 <img src="/imagens/saldo.png">
 
 
 # Próximas Implementações
  * Realizar atualização parcial do dados de uma conta;
  * Melhorar validações nas rotas;
- * Exibir contas por usuário;
+ * Exibir contas por usuário.
 
 Ainda estou trabalhando no projeto, então novas atualizações virão conforme as ideias surgirem. :thought_balloon:
 Obrigado por sua atenção. :cowboy_hat_face:
