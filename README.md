@@ -4,7 +4,7 @@
 
 Hello, there.
 
-Esta é a Stormy Banking System. Ela consiste em um sistema bancário com as funcionalidades de **listar todas as contas cadastradas, cadastrar conta, atualizar todos os dados de uma conta, excluir conta, depositar valor, sacar valor, transferir valor, obter extrato e saldo**.
+Esta é a Sormy Banking System. Ela consiste em um sistema bancário com as funcionalidades de **listar todas as contas cadastradas, cadastrar conta, atualizar todos os dados de uma conta, excluir conta, depositar valor, sacar valor, transferir valor, obter extrato e saldo**.
 
 ### Tecnologias utilizadas no projeto:
  *  Linguagem Javascript;
